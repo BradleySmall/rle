@@ -34,14 +34,11 @@ def rldunits(str1):
 def main():
     """Drive the example."""
     str1 = "AAAABBBBCDDEEFFFFFFFFFFF"
-    encoded = ""
-    for i in rleunits(str1):
-        encoded += i
+
+    encoded = ''.join(rleunits(str1))
     print(encoded)
 
-    unencoded = ""
-    for i in rldunits(encoded):
-        unencoded += i
+    unencoded = ''.join(rldunits(encoded))
     print(unencoded)
 
 
